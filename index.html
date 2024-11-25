@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drawing App</title>
+    <title>Pixel Art</title>
     <script src="scripts/script.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <div id="container">
-        <div id="tools-container"></div>
-        <div id="drawing-area"></div>
+        <div id="tools-container">
+            <h3>Tools:</h3>
+                <p id="pensil">Pensil</p>
+                <p id="eraser">Eraser</p>
+            <h3>Size:</h3>
+                <input type="number" id="user-size-input" placeholder="1-100">
+                <button id="resize">Resize</button>
+                <!-- <p id="fill">Fill</p> -->
+            <h3>Colors:</h3>
+            <input type="color" id="color-picker" value="#000000"><br>
+            <p id="color-value-display">#000000</p>
+            <button id="clear">Clear</button>
+        </div>
+        <div id="drawing-area">
+            
+        </div>
     </div>
 </body>
 </html>
